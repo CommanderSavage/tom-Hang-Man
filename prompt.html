@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hangman EXTREME</title>
+</head>
+<body>
+<script>alert("Welcome")
+alert("To")
+alert("Hangman")
+alert("EXTREME")
+alert("REVOLUTIONNNNNN!!!!!!!!")
+alert("This was all made by Thomas Adjapong and ken has no right to take credit for anything in this beacuse he's bad and he's not good at anything but basketball and who cares about basketball, everybody loves soccer, everybody loves Manchester City and everybody loves Sergio Aguero and everybody LOVES the Barclays Premier League.") 
+alert("This game was made by Thomas Adjapong and also made by my co-producer Ken Obour-Bekoe Mensah no has the right in any world to copy this game because its under the copryright of the law and the united states of america have the right to arsset you for in the 13 admendmant")
+var name = prompt("what's your name")
+alert("Welcome not ken or should I say " + name)
+var likesAguero = confirm("Do you like Aguero?")
+if (likesAguero) {
+	 alert("you're a cool person!")
+} else {
+	 alert("Sadly your missing out, that's fine. You're still cool")
+}
+alert("partially, but still better than ken")
+
+</script>
+<script>
+var words = [
+	"sergio aguero"
+	"robert lewandowski"
+	"marco reus"
+	"mario gotze"
+	"manuel neuer"
+	"robben van persie"
+	"juan mata"
+	"memphis depay"
+	"fernando torres"
+	"yaya toure" 
+	"david sliva"
+	"wilfred bony"
+	"jesus navas"
+	"fernadinho"
+	"vincet kompany"
+	"samir nasri" 
+	"paul pogba"
+]
+var word = words[Math.floor(Math.random() * words.length)]
+
+var answerArray = [];
+for (var i = 0; i < word.length; i++) {
+	answerArray[i] = "_";
+}
+
+var reamainingLetters = word.length;
+
+while (reamingLetters > ) {
+	alert(answerArray.join(" "));
+}
+
+var guess = prompt("Guess a letter, or click cancel to stop playing.");
+if(guess === null) {
+	alert("please enter a single letter.")
+} else {
+	for (var j = o; j <word.length; j++) {
+		if (word[j] === guess) {
+			answerArray[j] = guess;
+			reamingLetters--;
+		}
+	}
+}
+alert (answerArray.join(" "));
+alert("Good job! the answer was " + word);
+</script>
+
+
+
+</body>
+</html>
